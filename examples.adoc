@@ -1,0 +1,40 @@
+= Examples 
+
+[,golang]
+----
+p := Person{
+		Name:  "Joao",
+		Age:   27,
+		Email: "teste@teste.io",
+		Adress: []PersonAddress{
+			{
+				StreetName:    "Rua Dos bobos",
+				StreetNumber:  "A27",
+				Neighbourhood: "caraio",
+				AddressType:   "home",
+			},
+			{
+				StreetName:    "Avenue Abc",
+				StreetNumber:  "1234",
+				Neighbourhood: "Aehoo",
+				AddressType:   "work",
+			},
+			{
+				StreetName:    "Acacia Avenue",
+				StreetNumber:  "782",
+				Neighbourhood: "London",
+				AddressType:   "bar",
+			},
+		},
+	}
+
+addreeses := MapT(func(n PersonAddress) string {
+		return n.AddressType
+}, p.Adress)
+
+fmt.Printf("Addresses list: %s\n", addreeses)
+
+----
+
+
+
