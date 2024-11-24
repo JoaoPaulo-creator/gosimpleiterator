@@ -1,5 +1,16 @@
-= Examples 
+= Go simple iterator
 
+* <<#about,About>>
+* <<#examples,Examples>>
+
+[#about]
+== About
+
+Go simple iterator it's a package that contains simples functions to iterate over slices of basicaly any type.
+I built this, because I think that the builtin package iter is too complicated, specially in my usecases
+
+[#examples]
+== Examples 
 [,golang]
 ----
 p := Person{
@@ -35,6 +46,3 @@ addreeses := MapT(func(n PersonAddress) string {
 fmt.Printf("Addresses list: %s\n", addreeses)
 
 ----
-
-
-
