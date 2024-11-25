@@ -55,6 +55,9 @@ let mappedList = list.address.map((item: Address) => {
         }
 })
 
+
+let filteredList = list.address.filter((item: Address) => item.addressType == 'trabalho')
+
 console.log(mappedList)
 
 
