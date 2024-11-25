@@ -2,6 +2,8 @@
 
 * <<#about,About>>
 * <<#examples,Examples>>
+** <<#map,Map>>
+** <<#filter,Filter>>
 
 [#about]
 == About
@@ -47,6 +49,7 @@ addreeses := MapT(func(n PersonAddress) string {
 fmt.Printf("Addresses list: %s\n", addreeses)
 ----
 
+[#filter]
 `Filter`
 [,golang]
 ----
