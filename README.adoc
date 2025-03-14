@@ -42,7 +42,7 @@ p := Person{
 		},
 	}
 
-addreeses := MapT(func(n PersonAddress) string {
+addreeses := Map(func(n PersonAddress) string {
 		return n.AddressType
 }, p.Adress)
 
