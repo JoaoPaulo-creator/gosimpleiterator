@@ -9,7 +9,7 @@
 == About
 
 Go simple iterator it's a package that contains simple functions to iterate over slices of basicaly any type.
-I built this, because I think the builtin package `iter` over complicated and hard to read, specially in my usecases
+I built this, because I think the builtin package `iter` is over complicated and hard to read, specially in my usecases
 
 [#examples]
 == Examples 
