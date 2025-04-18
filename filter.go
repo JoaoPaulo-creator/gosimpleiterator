@@ -1,9 +1,9 @@
 package gosimpleiterator
 
-func Filter[T Constraint](preficate func(T) bool, s []T) []T {
+func Filter[T Constraint](predicate func(T) bool, s []T) []T {
 	newSlice := make([]T, 0)
 	for i := range s {
-		if preficate(s[i]) {
+		if predicate(s[i]) {
 			newSlice = append(newSlice, s[i])
 		}
 	}
